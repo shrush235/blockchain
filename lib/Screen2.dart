@@ -29,12 +29,6 @@ class SecondScreenState extends State<SecondScreen> {
                           borderRadius: BorderRadius.circular(35.0))),
                   child: Icon(Icons.arrow_back)),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: Text(
-                style: TextStyle(fontSize: 25),
-              ),
-            )
           ],
         )
       ],
