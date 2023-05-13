@@ -10,6 +10,8 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
+    TextEditingController inputcontroller = new TextEditingController();
+    String getvalue = inputcontroller.text;
     return Scaffold(
       body: Column(
         children: [
@@ -38,6 +40,7 @@ class _HomepageState extends State<Homepage> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextField(
+              controller: inputcontroller,
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: 'Enter the name',
