@@ -1,4 +1,4 @@
-import 'package:blockchain/Screen1.dart';
+import 'package:blockchain/homescreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -7,6 +7,8 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
+  // const MyApp({Key? key}) : super(key: key);
+
   @override
   State<MyApp> createState() => _MyAppState();
 }
@@ -14,8 +16,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      home: Homepage(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: Homepage());
   }
 }
