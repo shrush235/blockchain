@@ -19,9 +19,9 @@ class _HomepageState extends State<Homepage> {
         image: DecorationImage(
             image: AssetImage("asset/image/bg_app.jpg"), fit: BoxFit.cover),
       ),
-      child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 200),
-        child: SingleChildScrollView(
+      child: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 200),
           child: Column(
             children: [
               Text(
@@ -62,7 +62,7 @@ class _HomepageState extends State<Homepage> {
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 50,
               ),
               ElevatedButton(
                 onPressed: () {},
@@ -88,7 +88,7 @@ class _HomepageState extends State<Homepage> {
                 style: GoogleFonts.inter(color: Colors.black38),
               ),
               SizedBox(
-                height: 40,
+                height: 130,
               ),
               Text(
                 "Don't have an account?",
@@ -99,6 +99,12 @@ class _HomepageState extends State<Homepage> {
               ),
               ElevatedButton(
                   onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(100)),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 40, vertical: 12),
+                      backgroundColor: Colors.black38),
                   child: Text(
                     "Create",
                     style: GoogleFonts.inter(),
