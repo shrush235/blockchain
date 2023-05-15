@@ -15,7 +15,7 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
         body: Container(
       constraints: BoxConstraints.expand(),
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         image: DecorationImage(
             image: AssetImage("asset/image/bg_app.jpg"), fit: BoxFit.cover),
       ),

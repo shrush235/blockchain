@@ -1,4 +1,5 @@
 import 'package:blockchain/homescreen.dart';
+import 'package:blockchain/screen2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,6 +17,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Homepage());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: SecondScreen());
   }
 }
