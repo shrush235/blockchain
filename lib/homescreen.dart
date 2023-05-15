@@ -21,46 +21,90 @@ class _HomepageState extends State<Homepage> {
       ),
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: 200),
-        child: Column(
-          children: [
-            Text(
-              "WELCOME!",
-              style: GoogleFonts.inter(
-                  color: Colors.white,
-                  fontSize: 35,
-                  fontWeight: FontWeight.w700),
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 30),
-              child: TextField(
-                decoration: InputDecoration(
-                  hintText: "Username",
-                  hintStyle: GoogleFonts.inter(color: Colors.white70),
-                  enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(width: 1, color: Colors.white),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Text(
+                "WELCOME!",
+                style: GoogleFonts.inter(
+                    color: Colors.black38,
+                    fontSize: 35,
+                    fontWeight: FontWeight.w700),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 30),
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: "Username",
+                    hintStyle: GoogleFonts.inter(color: Colors.black38),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(width: 1, color: Colors.black38),
+                    ),
                   ),
                 ),
               ),
-            ),
-            SizedBox(
-              height: 40,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 30),
-              child: TextField(
-                decoration: InputDecoration(
-                  hintText: "Password",
-                  hintStyle: GoogleFonts.inter(color: Colors.white70),
-                  enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(width: 1, color: Colors.white),
+              SizedBox(
+                height: 40,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 30),
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: "Password",
+                    hintStyle: GoogleFonts.inter(color: Colors.black38),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(width: 1, color: Colors.black38),
+                    ),
                   ),
                 ),
               ),
-            ),
-          ],
+              SizedBox(
+                height: 30,
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  "Login",
+                  style: GoogleFonts.inter(
+                      fontSize: 15,
+                      color: Colors.white70,
+                      fontWeight: FontWeight.w500),
+                ),
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(100)),
+                  backgroundColor: Colors.black38,
+                  padding: EdgeInsets.symmetric(horizontal: 110, vertical: 12),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                "Forgot Password?",
+                style: GoogleFonts.inter(color: Colors.black38),
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              Text(
+                "Don't have an account?",
+                style: GoogleFonts.inter(color: Colors.black38),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Create",
+                    style: GoogleFonts.inter(),
+                  ))
+            ],
+          ),
         ),
       ),
     ));
